@@ -21,7 +21,9 @@ The bash script that performs the nmap scans, calls the python script above, and
 The above config runs a scan every 60 minutes.
 
 Assuming you've configured everything above correctly, every 60 minutes or defined time range, a scan will be conducted against the selected IP range. The results will be compared to the last scan performed, and the URL for the server will show changes to the network for that period until the next scan.
+
 ![image](https://github.com/endgrid/mattusreport/assets/104172903/89b471a6-f233-448c-a7f3-ca19b770db7c)
+
 A minus symbol indicated a host that is no longer detected, and a plus symbol indicates a host that is newly detected.
 
 Once new IPs have been detected, a savvy analyst could perform reverse lookups, OS detection, port scans, etc. to gather more information on the hosts.
