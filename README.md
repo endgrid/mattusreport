@@ -16,8 +16,11 @@ The python script to compare the most recent two scans uses the libdiff library 
 The bash script that performs the nmap scans, calls the python script above, and moves the results to the web directory. Note--the IP range will need to be replaced with the range you wish to monitor.
 
 ## Step 3: Schedule cron job
+
 `crontab -e`
+
 ![image](https://github.com/endgrid/mattusreport/assets/104172903/b8c85116-29f4-4560-9ce0-03d72a28daa7)
+
 The above config runs a scan every 60 minutes.
 
 Assuming you've configured everything above correctly, every 60 minutes or defined time range, a scan will be conducted against the selected IP range. The results will be compared to the last scan performed, and the URL for the server will show changes to the network for that period until the next scan.
